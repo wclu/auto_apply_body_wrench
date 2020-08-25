@@ -26,9 +26,10 @@ Note: If the system cannot find a python file, run the command below to change p
 
 
 ## The parameter you might want to revise
-You can change some parameters in the script to specify your force test.
+You can change some parameters in the script to specify your force test.  
+(Defult: test_start_time=25; test_period=5; body_name='alma::base'; force=[[50, 0, 0],[0, 24, 0],[0, 0, 50]])
 
 test_start_time: the sim time in secs that starts applying force  
 test_period: duration for each predefined force  
 body_name: the link that force applied on  
-force: the 2D array that predefines the forces. The number of the force can be changed.
+force: the 2D array that predefines the forces. [Fx, Fy, Fz] for each test period. The number of the force can be changed.
