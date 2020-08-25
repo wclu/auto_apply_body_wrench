@@ -1,15 +1,13 @@
 #!/usr/bin/env python
 
-# import sys
+
 import rospy
 import std_msgs
 import geometry_msgs.msg
 import rosgraph_msgs
 import gazebo_msgs.srv
-# import time
 import math
-# import matplotlib.pyplot as plt
-# from forces_torques.srv import *
+
 
 sim_time = 0
 
