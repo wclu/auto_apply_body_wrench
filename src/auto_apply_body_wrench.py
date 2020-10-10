@@ -45,14 +45,14 @@ def node():
     rate = rospy.Rate(1/node_update_rate)
 
     # Set Paramters for service
-    test_start_time = 25 # sec for sim time
-    test_period = 5 # sec for sim time
+    test_start_time = 48 # sec for sim time
+    test_period = 3 # sec for sim time
     body_name = 'alma::base'
     reference_frame = 'world'
     start_time = rospy.Time(secs = 0, nsecs = 0) # start as soon as possible if start_time is not specified, or start_time < current time
     duration = rospy.Duration(secs = node_update_rate, nsecs = 0)
     reference_point = geometry_msgs.msg.Point(x = 0, y = 0, z = 0)
-    force = [[50, 0, 0],[0, 24, 0],[0, 0, 50]] # [Fx, Fy, Fz] for each test period. Length can be added.
+    force = [[0, 13, 0]] # [Fx, Fy, Fz] for each test period. Length can be added.
 
 
     rospy.loginfo("Initiling...")
